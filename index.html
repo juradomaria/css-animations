@@ -7,9 +7,21 @@
 </head>
 <body>
 
-	<div id="greeting">Hello Friend.</div>
+	<div id="greeting">Cats Rock!</div>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	
+	<script>
+        $( "#greeting" ).click(function() {
+            $( "#greeting" ).toggleClass( "alt" );
+            $( "#greeting" ).toggleClass( "animated" );
+        });	
+        
+        $( "#greeting.alt" ).click(function() {
+            $( "#greeting" ).toggleClass( "alt" );
+            $( "#greeting" ).toggleClass( "unanimated" );
+        });	
+        
+    </script>
+    
 </body>
 </html>
